@@ -1,0 +1,6 @@
+Flux binaire correspondant à mina2.jpg dans le fichier tatou.pgm : commence au 159e octet
+
+31ème octet : début nom
+
+
+Taille de mina2.jpg : 
