@@ -10,30 +10,15 @@ public class Main
 	public static void main(String[] args) throws IOException
 	{
 		
+		//******************************************************************************************************
+		//Partie codage
+		Codeur codeur = new Codeur("tatoumina1.jpg", "Lena.pgm");
+		codeur.codage();
 		
-		byte res;
-		byte bitmask = 0x03;
-		long taille = 61393;
-		int i;
-		
-		for(i=15; i>=0 ; i--)
-		{
-			res = (byte) (taille & bitmask);
-			System.out.println(res);
-			taille = taille/4;
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		//Partie decodage 
 		System.out.println("Decodage : ");
-		Decodeur decodeur = new Decodeur("Tatou.pgm");
+		Decodeur decodeur = new Decodeur("Encode/test.pgm");
 		System.out.println("Nom de l'image cachee : " + decodeur.nomImageCachee + ", Taille : " + decodeur.taille);
 		decodeur.getData();
 
@@ -63,8 +48,7 @@ public class Main
 			sourceFile.close();
 		}
 		
-		//******************************************************************************************************
-		//Partie codage
+		
 	}
 
 }
