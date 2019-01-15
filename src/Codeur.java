@@ -36,7 +36,6 @@ public class Codeur
 		{
 			res = (byte) (test & bitmask);
 			test = test/4;
-			System.out.println(res);
 			
 			dataPlanque[offset-i] = (byte) (dataPlanque[offset - i] >> 2);
 			dataPlanque[offset-i] = (byte) (dataPlanque[offset - i] << 2);
