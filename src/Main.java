@@ -18,7 +18,7 @@ public class Main
 
 		//Partie decodage 
 		System.out.println("Decodage : ");
-		Decodeur decodeur = new Decodeur("Encode/test.pgm");
+		Decodeur decodeur = new Decodeur("Encode/FichierSecretDuRenseignementFrancais.pgm");
 		System.out.println("Nom de l'image cachee : " + decodeur.nomImageCachee + ", Taille : " + decodeur.taille);
 		decodeur.getData();
 
